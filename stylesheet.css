@@ -1,0 +1,121 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html,body{
+    width: 100vw;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 100vw;
+    justify-content: space-between;
+    padding: 1rem;
+}
+a{
+    text-emphasis: none;
+    text-decoration: none;
+}
+
+.menu-item{
+    display: flex;
+    flex-direction: column;
+}
+.nav-heading{
+    font-weight: 500;
+}
+.toggler{
+    display: none;
+}
+.toggler img{ 
+    height: 20px;
+    width: auto;
+}
+.item{
+    color: white;
+    padding: .5rem;
+}
+.item:hover{
+    text-decoration: underline grey;
+
+}
+.mobile{
+    max-width: 100%;
+}
+.card{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: 0px;
+}
+.card>h5{
+    border: 1px;
+    background-color: rgb(166, 172, 172);
+    padding: 2%;
+}
+.second{
+    padding: 2%;
+    float: left;
+}
+.title{
+    text-align: center;
+}
+.btn{
+    background-color: rgb(42, 42, 46);
+    border-radius: 0%;
+    color: white;
+    max-width: 150px;
+}
+
+#option-heading{
+    display: none;
+    font-weight: 600;
+}
+
+
+#opt{
+    color: white;
+}
+#join{
+    float: left;
+    width: 50%;
+    padding: 5%;
+    padding-top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pics{
+    width: 50%;
+    float: right;
+}
+
+@media only screen and (max-width: 600px) {
+    nav{
+        position: relative;
+    }
+    .inner-container{
+        flex-direction: column;
+        display: none; 
+    }
+    #option-heading{
+        display: inline-block;
+
+    }
+    .toggler{
+        display: inline-block;
+    }
+    .toggler-reverse{
+        display: none;
+    }
+    .item{
+        color: grey;
+    }
+}
